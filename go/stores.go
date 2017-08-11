@@ -1,4 +1,4 @@
-package 
+package stores
 
 import (
 	"net/http"
