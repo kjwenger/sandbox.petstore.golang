@@ -1,10 +1,10 @@
-package stores
+package blah
 
 import (
 	"net/http"
 )
 
-type Stores struct {
+type Store struct {
 
 }
 

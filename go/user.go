@@ -1,10 +1,10 @@
-package users
+package blah
 
 import (
 	"net/http"
 )
 
-type Users struct {
+type User struct {
 
 }
 

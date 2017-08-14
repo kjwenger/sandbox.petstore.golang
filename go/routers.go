@@ -1,4 +1,4 @@
-package routers
+package blah
 
 import (
 	"net/http"
@@ -47,14 +47,14 @@ var routes = Routes{
 	Route{
 		"AddPet",
 		"POST",
-		"/v2/pets",
+		"/v2/pet",
 		AddPet,
 	},
 
 	Route{
 		"DeletePet",
 		"DELETE",
-		"/v2/pets/{petId}",
+		"/v2/pet/{petId}",
 		DeletePet,
 	},
 
@@ -68,119 +68,119 @@ var routes = Routes{
 	Route{
 		"FindPetsByTags",
 		"GET",
-		"/v2/pets/findByTags",
+		"/v2/pet/findByTags",
 		FindPetsByTags,
 	},
 
 	Route{
 		"GetPetById",
 		"GET",
-		"/v2/pets/{petId}",
+		"/v2/pet/{petId}",
 		GetPetById,
 	},
 
 	Route{
 		"UpdatePet",
 		"PUT",
-		"/v2/pets",
+		"/v2/pet",
 		UpdatePet,
 	},
 
 	Route{
 		"UpdatePetWithForm",
 		"POST",
-		"/v2/pets/{petId}",
+		"/v2/pet/{petId}",
 		UpdatePetWithForm,
 	},
 
 	Route{
 		"UploadFile",
 		"POST",
-		"/v2/pets/{petId}/uploadImage",
+		"/v2/pet/{petId}/uploadImage",
 		UploadFile,
 	},
 
 	Route{
 		"DeleteOrder",
 		"DELETE",
-		"/v2/stores/orders/{orderId}",
+		"/v2/store/order/{orderId}",
 		DeleteOrder,
 	},
 
 	Route{
 		"GetInventory",
 		"GET",
-		"/v2/stores/inventory",
+		"/v2/store/inventory",
 		GetInventory,
 	},
 
 	Route{
 		"GetOrderById",
 		"GET",
-		"/v2/stores/orders/{orderId}",
+		"/v2/store/order/{orderId}",
 		GetOrderById,
 	},
 
 	Route{
 		"PlaceOrder",
 		"POST",
-		"/v2/stores/orders",
+		"/v2/store/order",
 		PlaceOrder,
 	},
 
 	Route{
 		"CreateUser",
 		"POST",
-		"/v2/users",
+		"/v2/user",
 		CreateUser,
 	},
 
 	Route{
 		"CreateUsersWithArrayInput",
 		"POST",
-		"/v2/users/createWithArray",
+		"/v2/user/createWithArray",
 		CreateUsersWithArrayInput,
 	},
 
 	Route{
 		"CreateUsersWithListInput",
 		"POST",
-		"/v2/users/createWithList",
+		"/v2/user/createWithList",
 		CreateUsersWithListInput,
 	},
 
 	Route{
 		"DeleteUser",
 		"DELETE",
-		"/v2/users/{username}",
+		"/v2/user/{username}",
 		DeleteUser,
 	},
 
 	Route{
 		"GetUserByName",
 		"GET",
-		"/v2/users/{username}",
+		"/v2/user/{username}",
 		GetUserByName,
 	},
 
 	Route{
 		"LoginUser",
 		"GET",
-		"/v2/users/login",
+		"/v2/user/login",
 		LoginUser,
 	},
 
 	Route{
 		"LogoutUser",
 		"GET",
-		"/v2/users/logout",
+		"/v2/user/logout",
 		LogoutUser,
 	},
 
 	Route{
 		"UpdateUser",
 		"PUT",
-		"/v2/users/{username}",
+		"/v2/user/{username}",
 		UpdateUser,
 	},
 

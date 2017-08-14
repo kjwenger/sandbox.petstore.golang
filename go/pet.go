@@ -1,10 +1,10 @@
-package pets
+package blah
 
 import (
 	"net/http"
 )
 
-type Pets struct {
+type Pet struct {
 
 }
 
