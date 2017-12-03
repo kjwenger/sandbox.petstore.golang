@@ -1,7 +1,7 @@
 package main
 
 import (
-	sw "./go"
+	sw "github.com/kjwenger/sandbox.petstore.golang/go"
 	"log"
 	"net/http"
 )
